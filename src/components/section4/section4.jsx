@@ -1,5 +1,5 @@
 import React from 'react'
-import Left from './Left'
+import Left from './Left.jsx'
 import StatCards from './StatCards'
 
 const Section4 = (props) => {
