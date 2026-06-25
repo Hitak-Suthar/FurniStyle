@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import logo from "../assets/Vector.png"
+import { Link } from 'react-router-dom'
 
 const Navbar = () => {
   const [open, setOpen] = useState(false)
@@ -35,10 +36,10 @@ const Navbar = () => {
             ${open ? "block" : "hidden md:flex"}
           `}
         >
-          <a href="#" className="hover:text-gray-600 transition">Home</a>
-          <a href="#" className="hover:text-gray-600 transition">About</a>
-          <a href="#" className="hover:text-gray-600 transition">Articles</a>
-          <a href="#" className="hover:text-gray-600 transition">About Us</a>
+          <Link to='/' className="hover:text-gray-600 transition">Home</Link>
+          <Link to='/about' className="hover:text-gray-600 transition">About</Link>
+          <Link to='/articles' className="hover:text-gray-600 transition">Articles</Link>
+          <Link to='/contact' className="hover:text-gray-600 transition">Contact</Link>
         </div>
 
       </div>
